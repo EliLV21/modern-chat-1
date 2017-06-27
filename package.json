@@ -1,0 +1,41 @@
+{
+  "name": "modern-chat",
+  "version": "1.0.0",
+  "description": "Chat built with JS modern tools",
+  "main": "server.js",
+  "scripts": {
+    "lint": "eslint ./src/js/app.js; exit 0;",
+		"html": "cp ./src/index.html ./dist/index.html",
+		"bundle": "browserify -t babelify ./src/js/app.js -o ./dist/js/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivandevp/modern-chat.git"
+  },
+  "keywords": [
+    "chat",
+    "es6",
+    "eslint",
+    "socket.io",
+    "babel",
+    "browserify",
+    "gulp"
+  ],
+  "author": "Laboratoria <thebestteam@laboratoria.la>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivandevp/modern-chat/issues"
+  },
+  "homepage": "https://github.com/ivandevp/modern-chat#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "socket.io": "^2.0.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-preset-env": "^1.5.2",
+    "babelify": "^7.3.0",
+    "browserify": "^14.4.0",
+    "eslint": "^4.1.1"
+  }
+}
